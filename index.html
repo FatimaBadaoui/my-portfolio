@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/tab-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- logo -->
+        <div class="navbar__logo">
+          <a href="#home">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <!-- Navigation -->
+        <ul class="navigation">
+          <li><a href="#about" class="navigation__link">About</a></li>
+          <li><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+          <li><a href="#contact" class="navigation__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero" id="home">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Hello,
+            <span class="hero__title--animated animated-1">I'm Fatima</span
+            ><span class="hero__title--animated animated-2"
+              >I'm a Web Developer</span
+            >
+          </h1>
+        </div>
+      </header>
+
+      <!-- Main Section -->
+      <main class="main">
+        <!-- About Section -->
+        <section id="about">
+          <article class="about">
+            <section class="personal-info">
+              <div class="profile-picture">
+                <img src="./images/profile.jpg" alt="Profile Picture" />
+              </div>
+              <table class="info__table">
+                <tr>
+                  <th scope="row">Name:</th>
+                  <td>Fatima Badaoui</td>
+                </tr>
+                <tr>
+                  <th scope="row">Profile:</th>
+                  <td>Web Developer student</td>
+                </tr>
+                <tr>
+                  <th scope="row">Email:</th>
+                  <td>fatima@example.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">Address:</th>
+                  <td>Linden, Germany</td>
+                </tr>
+              </table>
+            </section>
+            <section class="about-me">
+              <div class="about-me__text">
+                <h2>About Me</h2>
+                <p>
+                  Hi there! My name is Fatima and I am 30 years old. I have
+                  always been fascinated by the vast possibilities that the
+                  digital world offers, and I am currently on an exciting
+                  journey to acquire new skills and knowledge in the field of
+                  web development by DCI.
+                  <br />
+                  I find immense joy in utilizing my creativity and
+                  problem-solving skills to build websites that not only look
+                  great but also provide a seamless user experience.
+                </p>
+                <p>
+                  When I'm not coding, I enjoy spending time with my family,
+                  playing with my daughters and watching movies or Animes. I
+                  also enjoy being in nature, taking long walks or simply
+                  sitting and reading a good book.
+                </p>
+              </div>
+              <div class="skills">
+                <h2 class="skills__title">My Skills</h2>
+                <div class="skills-container">
+                  <p class="skills__item">
+                    <i class="fa-brands fa-html5"></i> HTML
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-css3-alt"></i> CSS
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-sass"></i> SASS
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-bootstrap"></i> BootStrap
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-git"></i> Git
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-square-js"></i> JavaScript
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-react"></i> React
+                  </p>
+                  <p class="skills__item">
+                    <i class="fa-brands fa-php"></i> PHP
+                  </p>
+                </div>
+              </div>
+            </section>
+          </article>
+        </section>
+        <!-- Prtfolio Section -->
+        <section id="portfolio">
+          <article class="portfolio">
+            <h2>My Portfolio</h2>
+            <p class="sub-title">Here are some of my works</p>
+            <section class="card-container">
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1635492491273-455af7728453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1560&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 1</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1635241161466-541f065683ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 2</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 3</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1627389955611-70c92a5d2e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 4</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1644310972589-643a2099d946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 5</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1645511897803-617335ebb916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 6</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1911&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 7</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1635377090186-036bca445c6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+                      alt="preview priject"
+                    />
+                  </div>
+                  <h3>Project 8</h3>
+                  <p><span>Date: </span>dd.mm.yyyy</p>
+                </div>
+              </a>
+            </section>
+          </article>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+          <div class="contact">
+            <h2 class="contact__title">Contact Me</h2>
+            <div class="contact__methods">
+              <div class="contact__info info">
+                <p class="info__text">
+                  If you have any inquiries, collaborations, or simply want to
+                  connect, feel free to reach out to me. I am always open to new
+                  opportunities and conversations related to web development,
+                  nature, or anything that piques my interest.
+                  <br />
+                  You can contact me via:
+                </p>
+                <p class="info__contact">
+                  <a href="tel:+4912345678"
+                    ><i class="fa-solid fa-phone"></i> (+49) 123 45678</a
+                  >
+                </p>
+                <p class="info__contact">
+                  <a href="mailto:fatima.badaoui@me.com"
+                    ><i class="fa-solid fa-envelope"></i>
+                    fatima.badaoui@me.com</a
+                  >
+                </p>
+                <!-- social media -->
+                <div class="info__social">
+                  <a href="https://github.com" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+              <form action="" method="post" class="contact__form">
+                <label class="form__label" for="user-name"
+                  >Write your full name:</label
+                >
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  class="form__input"
+                  placeholder="Your Full Name"
+                  minlength="8"
+                  required
+                />
+                <label class="form__label" for="email">Write your email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Your Email"
+                  required
+                />
+                <label class="form__label" for="message"
+                  >Leave a message:</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form__input"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <input type="submit" value="Send" class="form__button" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- copyright -->
+        <p class="footer__text">
+          &copy; 2023 Fatima Badaoui's Portfolio. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
