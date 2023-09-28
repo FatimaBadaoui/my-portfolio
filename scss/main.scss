@@ -57,77 +57,7 @@ i {
 /* MAIN SECTION */
 
 /* 1- ABOUT ARTICLE */
-.about { 
-  padding: 2em 3em 1.5em 3em;
-  width: 90%;
-  margin: 3em auto;
-  background-color: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
-/* 1.1 PERSONAL INFO */
-.personal-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3em;
-  margin-bottom: 1.5em;
-}
-.profile-picture {
-  width: 150px;
-  height: 150px;
-}
-
-.profile-picture img {
-  border-radius: 50%;
-  border: 2px solid var(--color-black);
-}
-
-.personal-info .info__table {
-  border-spacing: 10px 5px;
-}
-
-.personal-info .info__table th {
-  color: var(--color-main);
-  text-align: start;
-}
-
-/* 1.2 ABOUT ME  */
-.about-me {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3em;
-  margin-top: 3em;
-}
-
-.about h2 {
-  font-family: var(--font-heading);
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-.about-me > div {
-  flex: 1 1 400px;
-}
-/* 1.2.2 SKILLS */
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 2em;
-}
-
-.skills__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills__item i {
-  font-size: 4em;
-}
+@import "about-section";
 
 /* 2. PORTFOLIO */
 .portfolio {
