@@ -1,6 +1,25 @@
-@import "fonts";
-@import "reset";
-@import "variables";
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* COLORS */
+  --color-black: #2a2e30;
+  --color-main: #ec632e;
+  --color-main-light: #fac5b0;
+  --color-main-lighter: #faf1ee;
+  --color-white: #eee;
+  --color-bg-body: #f5f5f5;
+  /* FONTS */
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Kanit", sans-serif;
+  --font-size: 20px;
+}
 
 /* GLOBAL STYLING*/
 body {
@@ -49,21 +68,132 @@ i {
 }
 
 /* NAVBAR */
-@import "navbar";
+.navbar {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar__logo {
+  width: 200px;
+  height: 100px;
+  transition: transform 300ms ease-in-out;
+}
+.navbar .navbar__logo:hover {
+  transform: scaleX(1.1);
+}
+.navbar .navigation {
+  display: flex;
+  gap: 1.5em;
+  /* NAVIGATION HOVER ANIMATION */
+}
+.navbar .navigation .navigation__link {
+  color: var(--color-white);
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.navbar .navigation .navigation__link::after {
+  content: "";
+  display: block;
+  background-color: var(--color-main);
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  transition: width 300ms ease-in-out;
+}
+.navbar .navigation .navigation__link:hover::after {
+  width: 100%;
+}
 
 /* HERO SECTION */
-@import "hero";
+.hero {
+  height: 90vh;
+  display: grid;
+  place-content: center;
+  background-image: url("https://images.unsplash.com/photo-1632425422799-286dc4325dbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--color-white);
+}
+
+.hero__text {
+  /* the width will 100vw until it reaches 2000px */
+  width: min(100vw, 2000px);
+  padding-left: 10%;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5em, 5vw, 6em);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__title--animated {
+  position: absolute;
+  top: 1.5em;
+  padding-left: 0.5em;
+}
+
+.animated-1 {
+  animation: slide-from-bottom 5500ms infinite linear;
+}
+
+.animated-2 {
+  color: var(--color-main);
+  animation: slide-from-bottom 5500ms 2500ms infinite linear;
+}
+
+/* ANIMATION HERO TITLE */
+@keyframes slide-from-bottom {
+  0% {
+    top: 1.5em;
+    /* opacity: 0; */
+  }
+  15% {
+    top: 0em;
+    /* opacity: 1; */
+  }
+  30% {
+    top: 0em;
+    /* opacity: 1; */
+  }
+  45% {
+    top: -2em;
+    /* opacity: 0.5; */
+  }
+  60% {
+    top: -3em;
+    /* opacity: 0.5; */
+  }
+  100% {
+    top: -3em;
+    /* opacity: 0; */
+  }
+}
+.hero__text p {
+  font-size: 1.5em;
+  text-align: end;
+}
 
 /* MAIN SECTION */
-
 /* 1- ABOUT ARTICLE */
-.about { 
+.about {
   padding: 2em 3em 1.5em 3em;
   width: 90%;
   margin: 3em auto;
   background-color: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 /* 1.1 PERSONAL INFO */
@@ -75,6 +205,7 @@ i {
   gap: 3em;
   margin-bottom: 1.5em;
 }
+
 .profile-picture {
   width: 150px;
   height: 150px;
@@ -111,8 +242,8 @@ i {
 .about-me > div {
   flex: 1 1 400px;
 }
-/* 1.2.2 SKILLS */
 
+/* 1.2.2 SKILLS */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -133,6 +264,7 @@ i {
 .portfolio {
   padding: 3em 0;
 }
+
 .portfolio h2,
 .portfolio h3,
 .portfolio p {
@@ -160,8 +292,7 @@ i {
 }
 
 .card-container .card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background-color: #fff;
   padding-bottom: 1em;
   display: flex;
@@ -174,6 +305,7 @@ i {
 .card .card-img {
   height: 300px;
 }
+
 .card h3 {
   font-family: var(--font-heading);
   color: var(--color-main);
@@ -303,17 +435,17 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-
   .navbar {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5em 6em 0 4em;
   }
 }
-
 /* @media (min-width: 2001px) {
   .navbar {
     justify-content: center;
     column-gap: 5em;
   }
 } */
+
+/*# sourceMappingURL=index.css.map */
