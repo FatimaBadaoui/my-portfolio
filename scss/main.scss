@@ -66,14 +66,7 @@ i {
 @import "contact-section";
 
 /* FOOTER */
-footer {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  padding: 2em;
-  display: grid;
-  place-items: center;
-  gap: 1em;
-}
+@import "footer";
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
