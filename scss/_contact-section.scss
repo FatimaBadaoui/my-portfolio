@@ -1,0 +1,93 @@
+.contact {
+  width: 100%;
+  padding: 4em 0;
+  background-color: var(--color-main-lighter);
+
+  .contact__title {
+    font-family: var(--font-heading);
+    color: var(--color-main);
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.6em;
+  }
+
+  .contact__methods {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding: 1em;
+
+    .contact__info,
+    .contact__form {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+    }
+    /* 3.1- Contact Info   */
+    .contact__info {
+      i {
+        margin-right: 10px;
+      }
+
+      a:hover {
+        color: var(--color-main);
+      }
+
+      .info__social {
+        display: flex;
+        gap: 1em;
+
+        a {
+          font-size: 2em;
+          transition: transform 400ms ease-in-out;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    /* FORM */
+    .contact__form {
+      .form__label {
+        font-weight: 600;
+      }
+
+      .form__input {
+        margin: 0.5em 0 1em 0;
+        padding: 0.8em 1em;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid var(--color-black);
+
+        &:focus {
+          border: none;
+          outline: 2px solid var(--color-main);
+        }
+      }
+
+      .form__button {
+        align-self: center;
+        cursor: pointer;
+        background-color: var(--color-main);
+        color: var(--color-white);
+        border: none;
+        border-radius: 5px;
+        font-family: var(--font-heading);
+        font-size: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 30%;
+        padding: 0.5em 0;
+        transition: transform 300ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
