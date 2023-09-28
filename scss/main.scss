@@ -56,77 +56,11 @@ i {
 
 /* MAIN SECTION */
 
-/* 1- ABOUT ARTICLE */
+/* 1. ABOUT ARTICLE */
 @import "about-section";
 
 /* 2. PORTFOLIO */
-.portfolio {
-  padding: 3em 0;
-}
-.portfolio h2,
-.portfolio h3,
-.portfolio p {
-  text-align: center;
-}
-
-.portfolio h2 {
-  font-family: var(--font-heading);
-  color: var(--color-main);
-  font-size: 3em;
-  text-transform: uppercase;
-}
-
-.portfolio .sub-title {
-  font-size: 1.5em;
-}
-
-/* 2.1- card section */
-.card-container {
-  width: 90%;
-  margin: 3em auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5em;
-}
-
-.card-container .card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background-color: #fff;
-  padding-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  position: relative;
-  transition: transform 300ms ease-in-out;
-}
-
-.card .card-img {
-  height: 300px;
-}
-.card h3 {
-  font-family: var(--font-heading);
-  color: var(--color-main);
-  font-size: 1.5em;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card:hover::after {
-  content: "View Project";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  background-color: var(--color-main-light);
-  color: var(--color-main);
-  font-size: 1.8em;
-  font-family: var(--font-body);
-  font-weight: 700;
-}
+@import "portfolio-section";
 
 /* 3. CONTACT SECTION */
 .contact {
