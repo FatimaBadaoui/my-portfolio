@@ -126,7 +126,7 @@ i {
   height: 90vh;
   display: grid;
   place-content: center;
-  background-image: url("./images/hero-bg.avif");
+  background-image: url("./images/hero-bg.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
