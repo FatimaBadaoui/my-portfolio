@@ -194,7 +194,7 @@ i {
 /* MAIN SECTION */
 
 /* 1- ABOUT ARTICLE */
-.about { 
+.about {
   padding: 2em 3em 1.5em 3em;
   width: 90%;
   margin: 3em auto;
@@ -440,7 +440,6 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-
   .navbar {
     flex-direction: row;
     justify-content: space-between;
