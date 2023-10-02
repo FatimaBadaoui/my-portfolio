@@ -128,7 +128,7 @@ i {
   place-content: center;
   background-image: url("./images/hero-bg-2.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-white);
@@ -488,7 +488,7 @@ footer {
   }
 
   .hero {
-    background-position: bottom -90px right 0;
+    background-position: bottom;
   }
 
   .hero__title {
