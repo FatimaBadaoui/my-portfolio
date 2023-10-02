@@ -181,7 +181,9 @@ i {
 
 /* Animation title */
 @keyframes waivy {
-  0%, 40%, 100% {
+  0%,
+  40%,
+  100% {
     transform: translateY(0);
   }
 
@@ -207,21 +209,21 @@ i {
 }
 
 .hero__subtitle--animated.animated-2 {
-  animation-delay:  0.4s;
+  animation-delay: 0.4s;
 }
 
 .hero__subtitle--animated.animated-3 {
-  animation-delay:  0.8s;
+  animation-delay: 0.8s;
 }
 
 .hero__subtitle--animated.animated-4 {
-  animation-delay:  1.2s;
+  animation-delay: 1.2s;
 }
 .hero__subtitle--animated.animated-5 {
-  animation-delay:  1.6s;
+  animation-delay: 1.6s;
 }
 .hero__subtitle--animated.animated-6 {
-  animation-delay:  2s;
+  animation-delay: 2s;
 }
 
 /* ANIMATION HERO SUBTITLE */
