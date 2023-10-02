@@ -128,7 +128,7 @@ i {
   place-content: center;
   background-image: url("./images/hero-bg-2.jpg");
   background-size: cover;
-  background-position: bottom -200px right 0;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-white);
@@ -137,7 +137,7 @@ i {
 .hero__title {
   text-align: center;
   font-family: var(--font-heading);
-  font-size: clamp(1.8em, 6vw, 6em);
+  font-size: clamp(2em, 6vw, 6em);
   position: relative;
   -webkit-box-reflect: below -40px linear-gradient(transparent, rgba(0, 0, 0, 0.4));
 }
@@ -193,7 +193,7 @@ i {
 /* Hero Subtitle */
 .hero__subtitle {
   text-align: end;
-  font-size: clamp(0.8em, 2vw, 2em);
+  font-size: clamp(1em, 2vw, 2em);
   font-weight: 700;
 }
 
@@ -487,11 +487,8 @@ footer {
     justify-content: space-between;
     padding: 0.5em 6em 0 4em;
   }
-}
 
-/* @media (min-width: 2001px) {
-  .navbar {
-    justify-content: center;
-    column-gap: 5em;
+  .hero {
+    background-position: bottom -90px right 0;
   }
-} */
+}
