@@ -126,9 +126,9 @@ i {
   height: 90vh;
   display: grid;
   place-content: center;
-  background-image: url("https://images.unsplash.com/photo-1632425422799-286dc4325dbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
+  background-image: url("./images/hero-bg-2.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom -200px right 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-white);
